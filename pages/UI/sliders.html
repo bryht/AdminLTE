@@ -7,11 +7,11 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="../../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../../bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="../../bower_components/Ionicons/css/ionicons.min.css">
   <!-- bootstrap slider -->
   <link rel="stylesheet" href="../../plugins/bootstrap-slider/slider.css">
   <!-- Theme style -->
@@ -492,7 +492,7 @@
             <li><a href="#"><i class="fa fa-circle-o"></i> Level One</a></li>
           </ul>
         </li>
-        <li><a href="../../documentation/index.html"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+        <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
         <li class="header">LABELS</li>
         <li><a href="#"><i class="fa fa-circle-o text-red"></i> <span>Important</span></a></li>
         <li><a href="#"><i class="fa fa-circle-o text-yellow"></i> <span>Warning</span></a></li>
@@ -799,12 +799,12 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- jQuery 3.1.1 -->
-<script src="../../plugins/jQuery/jquery-3.1.1.min.js"></script>
+<!-- jQuery 3 -->
+<script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="../../bootstrap/js/bootstrap.min.js"></script>
+<script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="../../plugins/fastclick/fastclick.js"></script>
+<script src="../../bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="../../dist/js/adminlte.min.js"></script>
 <!-- AdminLTE for demo purposes -->
@@ -814,68 +814,8 @@
 <script>
   $(function () {
     /* BOOTSTRAP SLIDER */
-    $('.slider').slider();
-
-    /* ION SLIDER */
-    $("#range_1").ionRangeSlider({
-      min: 0,
-      max: 5000,
-      from: 1000,
-      to: 4000,
-      type: 'double',
-      step: 1,
-      prefix: "$",
-      prettify: false,
-      hasGrid: true
-    });
-    $("#range_2").ionRangeSlider({});
-
-    $("#range_5").ionRangeSlider({
-      min: 0,
-      max: 10,
-      type: 'single',
-      step: 0.1,
-      postfix: " mm",
-      prettify: false,
-      hasGrid: true
-    });
-    $("#range_6").ionRangeSlider({
-      min: -50,
-      max: 50,
-      from: 0,
-      type: 'single',
-      step: 1,
-      postfix: "°",
-      prettify: false,
-      hasGrid: true
-    });
-
-    $("#range_4").ionRangeSlider({
-      type: "single",
-      step: 100,
-      postfix: " light years",
-      from: 55000,
-      hideMinMax: true,
-      hideFromTo: false
-    });
-    $("#range_3").ionRangeSlider({
-      type: "double",
-      postfix: " miles",
-      step: 10000,
-      from: 25000000,
-      to: 35000000,
-      onChange: function (obj) {
-        var t = "";
-        for (var prop in obj) {
-          t += prop + ": " + obj[prop] + "\r\n";
-        }
-        $("#result").html(t);
-      },
-      onLoad: function (obj) {
-        //
-      }
-    });
-  });
+    $('.slider').slider()
+  })
 </script>
 </body>
 </html>
